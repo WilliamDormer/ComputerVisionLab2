@@ -1,0 +1,1 @@
+python test.py -content_image "../images/content/coco1k/000000064086.jpg" -style_image "../images/style/wikiart100/649044acbdf7fd1a759bd0649766cae5c.jpg" -decoder "experiments/decoder_tenk_40epoch_06gamma_iter_40.pth.tar" -encoder "../encoder.pth" -alpha 0.5 -cuda Y

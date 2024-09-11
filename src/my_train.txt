@@ -1,0 +1,8 @@
+python train.py --content_dir ../images/content/COCO10k --style_dir ../images/style/WIKIART10k --epochs 40 --gamma 0.6 --experiment_name "TAExperiment"
+
+# differences from the provided version:
+-p is not used, because the loss plots are sent to tensorboardx, not to an image file.
+-s is not used, instead experiment_name provides the unique part of the filename, and labels it within tensorboardx. and --save_dir tells which directory the decoders are saved in.
+
+There exist other parameters that can be modified for the script, see the argument list in train.py
+However, most of these have sensible defaults.
